@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'vCard PT. Angkasa Pura Suport',
+    'title' => 'Backend personal Asistan - Tunas Toyota Mampang',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>e</b>-Vcard',
+    'logo' => '<b>Backend</b> Personal Asistan MP',
     'logo_img' => 'images/logo-aps.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
