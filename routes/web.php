@@ -45,7 +45,9 @@ Route::resource('part', PartController::class);
 Route::post('part/updatenew', [PartController::class, 'updatenew'])->name('part.updatenew');
 Route::resource('opl', OplController::class);
 Route::post('opl/updatenew', [OplController::class, 'updatenew'])->name('opl.updatenew');
-
+Route::get('/linkstorage', function () {
+    return Artisan::call('storage:link');
+});
 
 
 Auth::routes();
