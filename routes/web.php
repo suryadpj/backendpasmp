@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\CatalogController;
+use App\Http\Controllers\JasaController;
+use App\Http\Controllers\KendaraanController;
+use App\Http\Controllers\MaterialController;
+use App\Http\Controllers\OplController;
+use App\Http\Controllers\PartController;
 use App\Http\Controllers\VcardController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +33,18 @@ Route::get('/profile2/{slug}', [ProfileController::class, 'show2'])->name('profi
 
 Route::resource('vcard', VcardController::class);
 Route::post('vcard/updatenew', [VcardController::class, 'updatenew'])->name('vcard.updatenew');
+Route::resource('katalog', CatalogController::class);
+Route::post('katalog/updatenew', [CatalogController::class, 'updatenew'])->name('katalog.updatenew');
+Route::resource('kendaraan', KendaraanController::class);
+Route::post('kendaraan/updatenew', [KendaraanController::class, 'updatenew'])->name('kendaraan.updatenew');
+Route::resource('material', MaterialController::class);
+Route::post('material/updatenew', [MaterialController::class, 'updatenew'])->name('material.updatenew');
+Route::resource('jasa', JasaController::class);
+Route::post('jasa/updatenew', [JasaController::class, 'updatenew'])->name('jasa.updatenew');
+Route::resource('part', PartController::class);
+Route::post('part/updatenew', [PartController::class, 'updatenew'])->name('part.updatenew');
+Route::resource('opl', OplController::class);
+Route::post('opl/updatenew', [OplController::class, 'updatenew'])->name('opl.updatenew');
 
 
 

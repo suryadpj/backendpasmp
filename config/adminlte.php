@@ -63,8 +63,8 @@ return [
     |
     */
 
-    'logo' => '<b>Backend</b> Personal Asistan MP',
-    'logo_img' => 'images/logo-aps.png',
+    'logo' => '<b>Backend</b> PAS MP',
+    'logo_img' => 'images/logo_tunas.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -86,7 +86,7 @@ return [
     'auth_logo' => [
         'enabled' => true,
         'img' => [
-            'path' => 'images/logo-aps.png',
+            'path' => 'images/logo_tunas.png',
             'alt' => 'Auth Logo',
             'class' => '',
             'width' => 50,
@@ -113,7 +113,7 @@ return [
         'enabled' => true,
         'mode' => 'fullscreen',
         'img' => [
-            'path' => 'images/logo-aps.png',
+            'path' => 'images/logo_tunas.png',
             'alt' => 'Preloader Image',
             'effect' => 'animation__shake',
             'width' => 60,
@@ -318,14 +318,49 @@ return [
         [
             'text' => 'Home',
             'url' => 'home',
-            'icon' => 'far fa-fw fa-file',
+            'icon' => 'fa fa-fw fa-home',
             // 'label' => 4,
             'label_color' => 'success',
         ],
         [
-            'text' => 'Data vcard',
-            'url' => 'vcard',
-            'icon' => 'far fa-fw fa-id-card',
+            'text' => 'Katalog',
+            'url' => 'katalog',
+            'icon' => 'fa fa-file',
+            // 'label' => 4,
+            'label_color' => 'success',
+        ],
+        [
+            'text' => 'Kendaraan',
+            'url' => 'kendaraan',
+            'icon' => 'fa fa-car',
+            // 'label' => 4,
+            'label_color' => 'success',
+        ],
+        [
+            'text' => 'Material',
+            'url' => 'material',
+            'icon' => 'fa fa-file',
+            // 'label' => 4,
+            'label_color' => 'success',
+        ],
+        [
+            'text' => 'Jasa',
+            'url' => 'jasa',
+            'icon' => 'fa fa-file',
+            // 'label' => 4,
+            'label_color' => 'success',
+        ],
+        [
+            'text' => 'Part',
+            'url' => 'part',
+            'icon' => 'fa fa-file',
+            // 'label' => 4,
+            'label_color' => 'success',
+        ],
+        [
+            'text' => 'Opl',
+            'url' => 'opl',
+            'icon' => 'fa fa-file',
             // 'label' => 4,
             'label_color' => 'success',
         ],
@@ -444,6 +479,21 @@ return [
                     'type' => 'css',
                     'asset' => true,
                     'location' => 'vendor/select2/css/select2.css',
+                ],
+            ],
+        ],
+        'summernote' => [
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'js',
+                    'asset' => true,
+                    'location' => 'vendor/summernote/summernote-bs4.js',
+                ],
+                [
+                        'type' => 'css',
+                        'asset' => true,
+                        'location' => 'vendor/summernote/summernote-bs4.css',
                 ],
             ],
         ],
