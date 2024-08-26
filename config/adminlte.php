@@ -339,31 +339,52 @@ return [
         [
             'text' => 'Material',
             'url' => 'material',
-            'icon' => 'fa fa-file',
+            'icon' => 'fa fa-th',
             // 'label' => 4,
             'label_color' => 'success',
         ],
         [
             'text' => 'Jasa',
             'url' => 'jasa',
-            'icon' => 'fa fa-file',
+            'icon' => 'fa fa-book',
             // 'label' => 4,
             'label_color' => 'success',
         ],
         [
             'text' => 'Part',
             'url' => 'part',
-            'icon' => 'fa fa-file',
+            'icon' => 'fa fa-ellipsis-h',
             // 'label' => 4,
             'label_color' => 'success',
         ],
         [
             'text' => 'Opl',
             'url' => 'opl',
-            'icon' => 'fa fa-file',
+            'icon' => 'fa fa-plus-square',
             // 'label' => 4,
             'label_color' => 'success',
         ],
+        [
+            'text' => 'Trade in',
+            'url' => 'tradein',
+            'icon' => 'fa fa-globe',
+            // 'label' => 4,
+            'label_color' => 'success',
+        ],
+        // [
+        //     'text'    => 'Trade in',
+        //     'icon'    => 'fas fa-fw fa-globe',
+        //     'submenu' => [
+        //         [
+        //             'text' => 'Trade-in Car',
+        //             'url'  => 'area',
+        //         ],
+        //         [
+        //             'text' => 'Trade-in Data',
+        //             'url'  => 'tarif_parkir',
+        //         ],
+        //     ],
+        // ],
         ['header' => 'account_settings'],
         [
             'text' => 'profile',

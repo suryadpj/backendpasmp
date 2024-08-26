@@ -6,6 +6,7 @@ use App\Http\Controllers\KendaraanController;
 use App\Http\Controllers\MaterialController;
 use App\Http\Controllers\OplController;
 use App\Http\Controllers\PartController;
+use App\Http\Controllers\TradeInController;
 use App\Http\Controllers\VcardController;
 use Illuminate\Support\Facades\Route;
 
@@ -45,9 +46,13 @@ Route::resource('part', PartController::class);
 Route::post('part/updatenew', [PartController::class, 'updatenew'])->name('part.updatenew');
 Route::resource('opl', OplController::class);
 Route::post('opl/updatenew', [OplController::class, 'updatenew'])->name('opl.updatenew');
+Route::resource('tradein', TradeInController::class);
+Route::post('tradein/updatenew', [TradeInController::class, 'updatenew'])->name('tradein.updatenew');
+
 Route::get('/linkstorage', function () {
     return Artisan::call('storage:link');
 });
+
 
 
 Auth::routes();
